@@ -1,0 +1,128 @@
+ *{
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizzing: border-box;
+ }
+ body{
+   font-family: montserrat;
+ }
+ html{
+   scroll-behavior: smooth;
+ }
+ nav{
+   background: #A0522D;
+   height: 80px;
+   width: 100%;
+ }
+ label.logo{
+   color: wheat;
+   font-size: 35px;
+   line-height: 80px;
+   padding: 0 50px;
+   font-weight: bold;
+ }
+ nav ul{
+   float: right;
+   margin-right: 20px;
+ }
+ nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+ }
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #D2B48C;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #D2B48C;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #8B4513;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+.one{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background_1.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+h1{
+  color: tan;
+  text-transform: uppercase;
+  font-size:40px;
+  text-align: center;
+  margin-top: 260px;
+}
+.phrases h2{
+  color: tan;
+  text-transform: uppercase;
+  font-size:40px;
+  text-align: center;
+  margin-top: 580px;
+}
+.phrases h3{
+  color: tan;
+  font-size:25px;
+  text-align: center;
+  margin-top: 20px;
+}
+.two{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background_6.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
